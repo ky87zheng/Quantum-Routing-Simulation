@@ -10,6 +10,8 @@ import seaborn as sns
 from scipy import stats
 from matplotlib.lines import Line2D
 from scipy.optimize import curve_fit
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
 class QuantumNetworkProtocol:
