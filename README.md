@@ -6,7 +6,12 @@ The code maps our proposed $O(1)$ local feedforward routing protocol onto a dual
 
 ## Prerequisites
 
-The simulation framework is built on Python 3.8+ and uses IBM's Qiskit for quantum circuit simulation. 
+This project is built on Python and relies on Qiskit for quantum simulation. 
+To ensure reproducibility, we recommend using a virtual environment (e.g., `venv` or `conda`).
+
+**Note on Python Version:** This project is compatible with Python 3.9 - 3.11. 
+*If you are using Python 3.12+, please note that older versions of Qiskit (e.g., 0.44.x) may have compatibility issues. Using a Python 3.9-3.11 environment is highly recommended.*
+
 To install the required dependencies, please run:
 
 `pip install -r requirements.txt`
