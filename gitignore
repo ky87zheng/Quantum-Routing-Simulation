@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+
+.idea/
+.vscode/
+
+.DS_Store
+Thumbs.db
+
+circuit_diagrams/
+detailed_logs/
+analysis_plots/
