@@ -501,9 +501,13 @@ def build_serial_network(m, n):
     final_graph = net.star_graphs[0]
     if not final_graph["leaves"]:
         raise RuntimeError("No terminal leaf is available for final center migration.")
-
+        
+    final_terminal = net.quantum_registers[m - 1]["peripherals"][0]
+    assert qidx(final_terminal) in {
+        qidx(q) for q in final_graph["leaves"]
+    }
     net.protocol2_center_migration(
-        final_graph["center"], final_graph["leaves"][0]
+        final_graph["center"], final_terminal
     )
 
     final_graph = net.star_graphs[0]
